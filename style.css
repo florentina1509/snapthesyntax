@@ -1,0 +1,164 @@
+.game-title {
+    font-size: 36px;
+    color: #3d76d1;
+    margin-top: 30px; 
+    margin-bottom: 10px; 
+    text-align: center;
+  }  
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #c9e0ff, #d4f1f9); /* Fixed */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 250px;
+    margin: 20px 0;
+}
+
+/* Game Board */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 15px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 3px solid #006400;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Styles */
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 2px solid #ff4d4d;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #228b22;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    transform: rotateY(0deg); /* Fixed */
+}
+
+/* When card is flipped */
+.card.flip {
+    transform: rotateY(180deg); /* Fixed */
+}
+
+/* Card Inner Parts */
+.card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Front side (logo) */
+.card-front {
+    background-image: url('./assets/logo.png');
+    background-size: cover;
+    background-position: center;
+    transform: rotateY(0deg);
+}
+
+/* Back side (HTML tags) */
+.card-back {
+    background-color: #ffffff;
+    color: #228b22;
+    font-size: 18px;
+    font-weight: bold;
+    transform: rotateY(180deg);
+}
+
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 0;
+    font-size: 20px;
+    color: #006400;
+}
+
+/* Reset Button */
+#reset-btn {
+    background-color: #32cd32;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px auto;
+    color: #fff;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+#reset-btn:hover {
+    background-color: #228b22;
+}
+
+/* Message */
+#message {
+    font-size: 24px;
+    color: #ff4500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: none;
+}
+
+/* Win Animation */
+.win.animation {
+    animation: bounce 1s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-10px);}
+}
+
+#how-to-play {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    color: #333;
+  }
+  #how-to-play h2 {
+    margin-bottom: 10px;
+    color: #006400;
+  }
+  

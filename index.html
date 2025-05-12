@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap the Syntax!</title>
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+   <header> 
+    <h1 class="game-title">Snap the Syntax!</h1>
+    <img src="./assets/logo.png" alt="Snap the Syntax Logo" class="logo"> 
+   </header> 
+
+   <section id="how-to-play">
+    <h2>How to Play</h2>
+    <p>
+      Click on two cards to flip them over. If the cards match  they stay flipped!<br>
+      If they don't match, they will flip back over. <br>
+      You only get 3 incorrect guesses, so think carefully! <br>
+      Match all pairs to win the game. Good luck!
+    </p>
+  </section>
+  
+  <div id="message"></div>
+
+   <main>
+    <section id="game-board" class="grid-container">
+        <!-- Cards will be generated here with JS -->
+    </section>
+
+    <!-- Reset Button -->
+    <button id="reset-btn">Reset Game</button>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard"> 
+        <div id="incorrect">Incorrect: 0</div> 
+        <div id="score">Score: 0</div> 
+    </div>
+
+    <!-- Win/Lose Message -->
+    <div id="message"></div> <!-- Fixed id name (lowercase) -->
+   </main>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
