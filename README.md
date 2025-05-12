@@ -1,6 +1,6 @@
 # snapthesyntax
 Project 1
-![Screenshot of Memory Card Game](./desktop/screenshotsts)
+![Screenshot of Snap the Syntax!](./assets/screenshotsts)
 
 # Memory Card Game
 
@@ -8,7 +8,7 @@ This is a simple browser-based memory game where players flip cards to find matc
 
 ## Getting Started
 
-**Play the game here:** [Live Game Link](https://yourusername.github.io/memory-card-game)
+**Play the game here:** [Live Game Link](https://florentina1509.github.io/snapthesyntax/)
 
 ### How to Play
 1. Cards will be revealed fro 2 seconds before they are flipped back. 
@@ -22,6 +22,7 @@ This is a simple browser-based memory game where players flip cards to find matc
 ## Attributions
 
 - Card logo self made on [Canva] (https://www.canva.com/design/DAGmOknkyhc/95a7DOuEy2qLo8IPi9j9Xw/view?utm_content=DAGmOknkyhc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hee3cdcc12e)
+- Logo image (./assets/logo.png)
 
 - ## Technologies Used
 
